@@ -1,11 +1,11 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAdduserMutation } from "../Features/users/userApi";
+import { useAddUserMutation } from "../Features/users/userApi";
 
 const AddUser = () => {
   const navigate = useNavigate();
-  const [addUser, { isLoading }] = useAdduserMutation();
+  const [addUser, { isLoading }] = useAddUserMutation();
 
   const [form, setForm] = useState({
     name: "",

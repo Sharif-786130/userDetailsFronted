@@ -44,7 +44,7 @@
 
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// 🔴 MUST come from .env (Render backend URL)
+//  MUST come from .env (Render backend URL)
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const usersApi = createApi({
