@@ -56,7 +56,7 @@ export const usersApi = createApi({
       const token = getState().auth.token;
 
       if (token) {
-        headers.set("Authorization", Bearer `${token}`);
+        headers.set("Authorization", `Bearer ${token}`);
       }
 
       headers.set("Content-Type", "application/json");
@@ -75,7 +75,7 @@ export const usersApi = createApi({
 
     //  GET user by ID
     getUserById: builder.query({
-      query: (id) => /users/`${id}`,
+      query: (id) => `/users/${id}`,
     }),
 
     //  ADD new user
